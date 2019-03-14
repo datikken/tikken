@@ -143,6 +143,11 @@ body {
   background-image: linear-gradient(to top right, #0a0000, rgba(203, 182, 130, 0.4)), url("../images/section3.png");
   background-size: cover;
   height: 100vh;
+  margin-top: -9.5rem;
+  transform: skewY(-7deg);
+}
+.section-features > * {
+  transform: skewY(7deg);
 }
 
 .cta:link, .cta:visited {

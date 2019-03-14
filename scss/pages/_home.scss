@@ -14,4 +14,11 @@
         url('../images/section3.png');
         background-size: cover;
         height: 100vh;
+        margin-top: -9.5rem;
+
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
 }
