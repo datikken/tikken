@@ -90,14 +90,14 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #181510, #A08C5B);
+  background-image: linear-gradient(to right, #A08C5B, #181510);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
 }
 .heading_secondary:hover {
-  transform: skewY(-2deg) skewX(2deg) scale(1.2);
+  transform: skewY(2deg) skewX(-2deg) scale(1.2);
   text-shadow: 0.2rem 1rem 2rem rgba(24, 21, 16, 0.2);
 }
 
@@ -242,6 +242,41 @@ body {
   width: calc((100%) / 2);
   height: auto;
   float: left;
+}
+
+.composition {
+  position: relative;
+}
+.composition_photo {
+  height: 200px;
+  box-shadow: 0 1.5rem 4rem rgba(24, 21, 16, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.2s;
+  outline-offset: 1rem;
+}
+.composition_photo--p1 {
+  left: 5%;
+  top: -2rem;
+}
+.composition_photo--p2 {
+  right: 12rem;
+  top: 2rem;
+}
+.composition_photo--p3 {
+  left: 20%;
+  top: 14rem;
+}
+.composition_photo:hover {
+  outline: 1.5rem solid #785F37;
+  outline-style: outset;
+  transform: scale(1.5);
+  box-shadow: 0 2.5rem 4rem rgba(24, 21, 16, 0.7);
+  z-index: 2;
+}
+.composition:hover .composition_photo:not(:hover) {
+  transform: scale(0.8);
 }
 
 /*# sourceMappingURL=style.css.map */
