@@ -1,0 +1,68 @@
+/* black #181510
+dark gold #785F37
+gold #A08C5B
+light gold #CBB682 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #181510;
+    color: #785F37;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to top right, 
+        rgb(10, 0, 0, 1),
+        rgb(203, 182, 130, 0.4)), 
+        url('../images/skull2.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+}
+
+.logo-box {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.logo {
+    height: 50px;
+}
+
+
+.heading_primary-main {
+    color: #E9DBBD;
+    text-transform: uppercase;
+    display: block;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 38.5px;
+}
+
+.heading_primary-sub {
+    color: #CBB682;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading_text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
