@@ -7,7 +7,7 @@
     border-radius: 10rem;
     transition: all .2s;
     position: relative;
-    font-size: 1.6rem;
+    font-size: $defaultFont;
 }
 
 .cta-gold {
@@ -52,4 +52,30 @@
     animation: moveInBottom 0.3s ease-out;
     animation-delay: 0.5s;
     animation-fill-mode: backwards;
+}
+
+.cta-text {
+    &:link,
+    &:visited {
+        font-size: $defaultFont;
+        color: $myblack;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $myblack;
+        padding: 3px;
+        transition: all .2s;
+    } 
+
+    &:hover {
+        background-color: $myblack;
+        width: 11rem;
+        color: $whiteGold;
+        box-shadow: 0 1rem 2rem rgba($myblack, .15);
+        transform: translateY(-2px);
+        }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($myblack, .15); 
+        transform: translateY(0);
+    }
 }
