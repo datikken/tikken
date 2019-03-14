@@ -1,166 +1,161 @@
-/* black #181510
-dark gold #785F37
-gold #A08C5B
-light gold #CBB682 */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+  font-size: 62.5%;
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.7;
-    background-color: #181510;
-    color: #785F37;
-    padding: 30px;
+  box-sizing: border-box;
 }
 
-.header {
-    height: 95vh;
-    background-image: linear-gradient(
-        to top right, 
-        rgb(10, 0, 0, 1),
-        rgb(203, 182, 130, 0.4)), 
-        url('../images/skull2.jpg');
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    position: relative;
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  padding: 3rem;
+  background-color: #181510;
+  color: #785F37;
 }
-
-.logo-box {
-    position: absolute;
-    top: 30px;
-    left: 40px;
-}
-
-.logo {
-    height: 50px;
-}
-
 
 .heading_primary-main {
-    color: #E9DBBD;
-    text-transform: uppercase;
-    display: block;
-    font-size: 70px;
-    font-weight: 700;
-    letter-spacing: 40px;
-    animation: moveInRight 0.6s ease-in;
-    animation-delay: 0.2s;
+  color: #E9DBBD;
+  text-transform: uppercase;
+  display: block;
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 4rem;
+  animation: moveInRight 0.6s ease-in;
+  animation-delay: 0.2s;
 }
 
 .heading_primary-sub {
-    color: #CBB682;
-    display: block;
-    font-size: 15px;
-    font-weight: 200;
-    letter-spacing: 5.22px;
-    animation: moveInLeft 0.6s ease-in;
-    animation-delay: 0.2s;
-    margin-right: 35px;
-    margin-bottom: 20px;
+  color: #CBB682;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 0.5rem;
+  animation: moveInLeft 0.6s ease-in;
+  animation-delay: 0.2s;
+  margin-right: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 .heading_text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-@keyframes moveInLeft {
-     0% {
-        opacity: 0;
-        transform: translate(-100px);
-     }
-
-     100% {
-        opacity: 1;
-        transform: translate(0);
-     }
-}
-
-@keyframes moveInRight {
-    0% {
-       opacity: 0;
-       transform: translate(100px);
-    }
-    
-    100% {
-       opacity: 1;
-       transform: translate(0);
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-       opacity: 0;
-       transform: translateY(100px);
-    }
-    
-    100% {
-       opacity: 1;
-       transform: translateY(0);
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .cta:link, .cta:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
 }
 
 .cta-gold {
-    background-color: #E9DBBD;
-    color: #181510;    
+  background-color: #E9DBBD;
+  color: #181510;
 }
 
 .cta::after {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
 }
 
 .cta-gold::after {
-    background-color: #E9DBBD;
+  background-color: #E9DBBD;
 }
 
 .cta:hover::after {
-    transform: scaleX(1.2) scaleY(1.4);
-    opacity: 0;
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
 }
 
 .cta:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgb(0,0,0, 0.5);
-
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 
 .cta:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgb(0,0,0, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .cta-animated {
-    animation: moveInBottom 0.3s ease-out;
-    animation-delay: 0.5s;
-    animation-fill-mode: backwards;
+  animation: moveInBottom 0.3s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to top right, #0a0000, rgba(203, 182, 130, 0.4)), url("../images/skull2.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+}
+
+.logo {
+  height: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

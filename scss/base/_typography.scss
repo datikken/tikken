@@ -1,0 +1,40 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 3rem;
+    background-color: $myblack;
+    color: $darkGold;
+}
+
+.heading_primary-main {
+    color: $whiteGold;
+    text-transform: uppercase;
+    display: block;
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: 4rem;
+    animation: moveInRight 0.6s ease-in;
+    animation-delay: 0.2s;
+}
+
+.heading_primary-sub {
+    color: $lightGold;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    animation: moveInLeft 0.6s ease-in;
+    animation-delay: 0.2s;
+    margin-right: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.heading_text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+
+.cta:link, .cta:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.cta-gold {
+    background-color: $whiteGold;
+    color: $myblack;    
+}
+
+.cta::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.cta-gold::after {
+    background-color: $whiteGold;
+}
+
+.cta:hover::after {
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0;
+}
+
+.cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgb(0,0,0, 0.5);
+
+}
+
+.cta:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgb(0,0,0, 0.2);
+}
+
+.cta-animated {
+    animation: moveInBottom 0.3s ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
