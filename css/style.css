@@ -379,15 +379,48 @@ body {
 .card_picture {
   background-size: cover;
   height: 32rem;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 .card_picture-1 {
-  background-image: url("../images/tour1.png");
+  background-image: linear-gradient(to right top, #E9DBBD, #785F37), url("../images/tour1.png");
+  background-blend-mode: saturation;
 }
 .card_picture-2 {
   background-image: url("../images/tour2.png");
 }
 .card_picture-3 {
-  background-image: url("../images/tour3.png");
+  background-image: linear-gradient(to right top, #E9DBBD, #785F37), url("../images/tour3.png");
+  background-blend-mode: saturation;
+}
+.card_heading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #E9DBBD;
+  position: absolute;
+  top: 30rem;
+  right: 2rem;
+  background-color: black;
+  width: 15rem;
+  text-align: center;
+}
+.card_details {
+  padding: 3rem;
+}
+.card_details ul {
+  list-style-type: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.card_details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: #181510;
+}
+.card_details ul li:not(:last-child) {
+  border-bottom: 1px solid #785F37;
 }
 
 /*# sourceMappingURL=style.css.map */

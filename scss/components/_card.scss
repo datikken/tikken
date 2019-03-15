@@ -17,7 +17,7 @@
         box-shadow: 0 2rem 4rem rgba($myblack, .5);
 
         &-front {
-            background-image: linear-gradient(to right top, $darkGold, $whiteGold);            
+            background-image: linear-gradient(to right top, $darkGold, $whiteGold);     
         }
 
         &-back {
@@ -40,17 +40,63 @@
     &_picture {
         background-size: cover;
         height: 32rem;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 
         &-1 {
-            background-image: url("../images/tour1.png");
+            background-image: 
+              linear-gradient(to right top, $whiteGold, $darkGold), 
+              url("../images/tour1.png");
+              background-blend-mode: saturation;
         }
 
         &-2 {
-            background-image: url("../images/tour2.png");            
+            background-image: 
+              url("../images/tour2.png");    
         }
 
         &-3 {
-            background-image: url("../images/tour3.png");            
+            background-image: 
+              linear-gradient(to right top, $whiteGold, $darkGold), 
+              url("../images/tour3.png");
+              background-blend-mode: saturation;          
         }
     }
+
+    &_heading {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $whiteGold;
+        position: absolute;
+        top: 30rem;
+        right: 2rem;
+        background-color: black;
+        width: 15rem;
+        text-align: center;
+    }
+
+    &_details {
+        padding: 3rem;
+
+        ul {
+            list-style-type: none;
+            width: 80%;
+            margin: 0 auto;
+    
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: .5rem;
+                color: $myblack;
+                    
+                    &:not(:last-child) {
+                        border-bottom: 1px solid $darkGold;
+                    }
+            }
+
+          
+        }
+    }
+
 }
