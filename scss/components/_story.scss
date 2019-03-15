@@ -1,6 +1,6 @@
 .story {
     width: 75%;
-    height: 25rem;
+    height: 28rem;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($myblack, .1);
     background-color: $whiteGold;
@@ -17,7 +17,7 @@
         width: 15rem;
         height: 15rem;
         float: left;
-        background-color: red;
+        background-color: black;
         shape-outside: circle(50% at 50% 50%);
         -webkit-shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
@@ -34,6 +34,7 @@
 
     &_text {
         transform: skewX(12deg);
+        font-size: 1.1rem;
     }
 
     &_caption {
