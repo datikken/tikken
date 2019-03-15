@@ -1,0 +1,76 @@
+.navigation {
+    &_checkbox {
+        display: none;
+    }
+
+    &_button {
+        background-color: black;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 9999;
+    }
+
+    &_background {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        background: radial-gradient(white, black);
+        z-index: 1000;
+        transform: scale(50);
+    }
+
+    &_nav {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    &_list {
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+        z-index: 9999;
+    }
+
+    &_item {
+        margin: 0.5rem;
+    }
+
+    &_link {
+        &:link,
+        &:visited {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 300;
+        padding: 1rem 2rem;
+        color: $whiteGold;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $gold;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $gold 50%, $whiteGold 100% );
+        background-size: 250%;
+        transition: all .4s;
+    }
+
+    &:hover,
+    &:active {
+        background-position: 100%;
+        color: black;
+        transform: translateX(1rem);
+    }
+    }
+}
