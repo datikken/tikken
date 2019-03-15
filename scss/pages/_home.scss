@@ -1,12 +1,12 @@
 .section_about {
     background-color: $whiteGold;
-    padding: 25rem 0;
+    padding: 20rem 0 15rem 0;
     margin-top: -20vh;
     height: 100rem;
 }
 
 .section_features {
-    padding: 20rem 0;
+    padding: 23rem 0;
     background-image: linear-gradient(
         to top right, 
         rgb(10, 0, 0, 1),
@@ -26,6 +26,6 @@
 
 .section_tours {
     background-color: $whiteGold;
-    padding: 25rem 0 50rem 0;
+    padding: 15rem 0 30rem 0;
     margin-top: -8.5rem;
 }
