@@ -50,7 +50,7 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   padding: 3rem;
-  background-color: #181510;
+  background-color: black;
   color: #785F37;
 }
 
@@ -157,8 +157,18 @@ body {
 
 .section_tours {
   background-color: #E9DBBD;
-  padding: 15rem 0 30rem 0;
+  padding: 15rem 0 10rem 0;
   margin-top: -8.5rem;
+  height: 95rem;
+}
+
+.section_stories {
+  padding: 5rem 0;
+  position: relative;
+}
+.section_stories .heading_secondary {
+  color: #E9DBBD;
+  padding-top: 2rem;
 }
 
 .cta:link, .cta:visited {
@@ -223,10 +233,12 @@ body {
   border-bottom: 1px solid #181510;
   padding: 3px;
   transition: all 0.2s;
+  width: 12rem;
+  text-align: center;
 }
 .cta-text:hover {
   background-color: #181510;
-  width: 11rem;
+  width: 12rem;
   color: #E9DBBD;
   box-shadow: 0 1rem 2rem rgba(24, 21, 16, 0.15);
   transform: translateY(-2px);
@@ -234,62 +246,6 @@ body {
 .cta-text:active {
   box-shadow: 0 0.5rem 1rem rgba(24, 21, 16, 0.15);
   transform: translateY(0);
-}
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to top right, #0a0000, rgba(203, 182, 130, 0.4)), url("../images/skull2.jpg");
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative;
-}
-
-.logo-box {
-  position: absolute;
-  top: 3rem;
-  left: 4rem;
-}
-
-.logo {
-  height: 5rem;
-}
-
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
-}
-.row:not(:last-child) {
-  margin-bottom: 8rem;
-}
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row [class^=col] {
-  float: left;
-}
-.row [class^=col]:not(:last-child) {
-  margin-right: 6rem;
-}
-.row .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
-}
-.row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
-}
-.row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
-}
-.row .col-1-of-4 {
-  width: calc((100% - 3 * 6rem) / 4);
-}
-.row .col-2-of-4 {
-  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
-}
-.row .col-3-of-4 {
-  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
 
 .composition {
@@ -453,6 +409,133 @@ body {
 .card_price-value {
   font-size: 2.4rem;
   font-weight: 100;
+}
+
+.story {
+  width: 75%;
+  height: 25rem;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(24, 21, 16, 0.1);
+  background-color: #E9DBBD;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  transform: skewX(-12deg);
+}
+.story:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.story_shape {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  background-color: red;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  transform: translate(-3rem) skewX(12deg);
+  position: relative;
+}
+.story_image {
+  transform: scale(1.4);
+  width: 100%;
+  backface-visibility: hidden;
+  transition: all 0.6s;
+}
+.story_text {
+  transform: skewX(12deg);
+}
+.story_caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: #E9DBBD;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.6s;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  text-align: center;
+}
+.story:hover .story_caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.story:hover .story_image {
+  transform: scale(1);
+  filter: blur(3px) brightness(180%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+.bg-video_content {
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to top right, #0a0000, rgba(203, 182, 130, 0.4)), url("../images/skull2.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+}
+
+.logo {
+  height: 5rem;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col] {
+  float: left;
+}
+.row [class^=col]:not(:last-child) {
+  margin-right: 6rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+}
+.row .col-3-of-4 {
+  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -26,6 +26,17 @@
 
 .section_tours {
     background-color: $whiteGold;
-    padding: 15rem 0 30rem 0;
+    padding: 15rem 0 10rem 0;
     margin-top: -8.5rem;
+    height: 95rem;
+}
+
+.section_stories {
+    padding: 5rem 0;
+    position: relative;
+
+    .heading_secondary {
+        color: $whiteGold;
+        padding-top: 2rem;  
+    }
 }

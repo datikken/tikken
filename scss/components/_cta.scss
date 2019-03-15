@@ -64,11 +64,13 @@
         border-bottom: 1px solid $myblack;
         padding: 3px;
         transition: all .2s;
+        width: 12rem;
+        text-align: center;
     } 
 
     &:hover {
         background-color: $myblack;
-        width: 11rem;
+        width: 12rem;
         color: $whiteGold;
         box-shadow: 0 1rem 2rem rgba($myblack, .15);
         transform: translateY(-2px);
