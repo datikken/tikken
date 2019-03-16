@@ -23,16 +23,16 @@
 
     <nav class="navigation_nav">
       <ul class="navigation_list">
-        <li class="navigation_item"><a href="#" class="navigation_link">Home</a></li>
-        <li class="navigation_item"><a href="#" class="navigation_link">About</a></li>
-        <li class="navigation_item"><a href="#" class="navigation_link">Features</a></li>
-        <li class="navigation_item"><a href="#" class="navigation_link">Skills</a></li>
-        <li class="navigation_item"><a href="#" class="navigation_link">Stories</a></li>
+        <li class="navigation_item"><a href="#home" class="navigation_link">Home</a></li>
+        <li class="navigation_item"><a href="#section-about" class="navigation_link">About</a></li>
+        <li class="navigation_item"><a href="#section-features" class="navigation_link">Features</a></li>
+        <li class="navigation_item"><a href="#section-skills" class="navigation_link">Skills</a></li>
+        <li class="navigation_item"><a href="#section-stories" class="navigation_link">Stories</a></li>
       </ul>
     </nav>
   </div>
 
-    <header class="header">
+    <header class="header" id="home">
       <div class="logo-box">
           <img src="./images/logo2.png" alt="Logo" class="logo">
       </div>
@@ -51,7 +51,7 @@
     </header>
 
     <main>
-        <section class="section_about">
+        <section class="section_about" id="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading_secondary">
                     Exciting code for your ideas
@@ -85,7 +85,7 @@
             </div>
         </section>
 
-        <section class="section_features">
+        <section class="section_features" id="section-features">
             
             <div class="row">
               <div class="col-1-of-4">
@@ -130,7 +130,7 @@
           </div>
         </section>
 
-        <section class="section_skills">
+        <section class="section_skills" id="section-skills">
           <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading_secondary">
               My skill's
@@ -160,12 +160,11 @@
                       <p class="card_price-only">Only</p>
                       <p class="card_price-value">Care & Coffee</p>
                     </div>
-                    <a href="#" class="cta cta-gold">Contact</a>
+                    <a href="#popup" class="cta cta-gold">Contact</a>
                   </div>
                 </div>
               </div>
             </div>  
-
 
             <div class="col-1-of-3">
               <div class="card">
@@ -190,7 +189,7 @@
                         <p class="card_price-only">Only</p>
                         <p class="card_price-value">Care & Coffee</p>
                       </div>
-                    <a href="#" class="cta cta-gold">Contact</a>
+                    <a href="#popup" class="cta cta-gold">Contact</a>
                   </div>
                 </div>
               </div>
@@ -218,7 +217,7 @@
                         <p class="card_price-only">Only</p>
                         <p class="card_price-value">Care & Coffee</p>
                       </div>
-                      <a href="#" class="cta cta-gold">Contact</a>
+                      <a href="#popup" class="cta cta-gold">Contact</a>
                     </div>
                   </div>
                 </div>
@@ -226,8 +225,7 @@
           </div>
         </section>
 
-
-        <section class="section_stories">
+        <section class="section_stories" id="section-stories">
             <div class="bg-video">
                 <video class="bg-video_content" autoplay muted loop>
                   <source src="images/bill.mp4" type="video/mp4">
@@ -297,8 +295,8 @@
           <div class="footer_navigation">
             <ul class="footer_list">
               <li class="footer_item"><a href="#" class="footer_link">Contact</a></li>
-              <li class="footer_item"><a href="#" class="footer_link">About</a></li>
-              <li class="footer_item"><a href="#" class="footer_link">Home</a></li>
+              <li class="footer_item"><a href="#section-about" class="footer_link">About</a></li>
+              <li class="footer_item"><a href="#home" class="footer_link">Home</a></li>
             </ul>
           </div>
         </div>
@@ -310,13 +308,14 @@
       </div>
     </footer>
 
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup_content">
         <div class="popup_left">
           <img src="./images/popup1.png" alt="1" class="popup_img">
           <img src="./images/popup2.png" alt="1" class="popup_img">
         </div>
         <div class="popup_right">
+          <a href="#section-skills" class="popup_close">&times;</a>
           <h2 class="heading_popup u-margin-bottom-small">
             Reach me right now!
           </h2>
