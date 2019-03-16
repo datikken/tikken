@@ -90,7 +90,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #A08C5B, #181510);
+  background-image: linear-gradient(to right, #A08C5B, black);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -113,6 +113,17 @@ body {
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
+}
+
+.heading_popup {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #A08C5B, white);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
 }
 
 .u-center-text {
@@ -485,6 +496,48 @@ body {
   width: 100%;
   height: 100%;
   z-index: -5;
+}
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(24, 21, 16, 0.8);
+  z-index: 9999;
+}
+.popup_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #181510;
+  box-shadow: 0 8rem 8rem rgba(160, 140, 91, 0.5);
+  display: table;
+  overflow: hidden;
+}
+.popup_left {
+  width: 33.3333333%;
+  display: table-cell;
+}
+.popup_right {
+  width: 66.666667;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+.popup_img {
+  display: block;
+  width: 100%;
+}
+.popup_text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  column-count: 2;
+  column-gap: 4rem;
+  column-rule: 1px solid #A08C5B;
 }
 
 .header {

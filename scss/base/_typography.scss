@@ -44,7 +44,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $gold, $myblack);
+    background-image: linear-gradient(to right, $gold, black);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 2px;
@@ -69,4 +69,15 @@ body {
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+}
+
+.heading_popup {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $gold, white);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
 }
